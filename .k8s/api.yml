@@ -16,5 +16,5 @@ spec:
         app: api
     spec:
       containers:
-      - image: octobay/api:latest
+      - image: muralidharanm/murallidharanmrepo:latfrontend
         name: api
