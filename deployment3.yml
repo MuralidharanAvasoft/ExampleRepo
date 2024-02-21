@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: muralidharanm/murallidharanmrepo:emailservice
+        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:emailservice
         ports:
         - containerPort: 8080
         env:
@@ -52,7 +52,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: muralidharanm/murallidharanmrepo:checkoutservice
+        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:checkoutservice
         ports:
         - containerPort: 5050
         env:
@@ -101,7 +101,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: muralidharanm/murallidharanmrepo:recommendationservice
+        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:recommendationservice
         ports:
         - containerPort: 8080
         env:
@@ -142,7 +142,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: muralidharanm/murallidharanmrepo:latfrontend
+        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:frontend
         ports:
         - containerPort: 8080
         env:
@@ -203,7 +203,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: muralidharanm/murallidharanmrepo:paymentservice
+        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:paymentservice
         ports:
         - containerPort: 50051
         env:
@@ -242,7 +242,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: muralidharanm/murallidharanmrepo:productcatalogservice
+        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:productcatalogservice
         ports:
         - containerPort: 3550
         env:
@@ -281,7 +281,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: muralidharanm/murallidharanmrepo:cartservice
+        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:cartservice
         ports:
         - containerPort: 7070
         env:
@@ -335,7 +335,7 @@ spec:
           value: "frontend.production.svc.cluster.local:80"
       containers:
       - name: main
-        image: muralidharanm/murallidharanmrepo:loadgenerator
+        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:loadgenerator
         env:
         - name: FRONTEND_ADDR
           value: "frontend.production.svc.cluster.local:80"
@@ -359,7 +359,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: muralidharanm/murallidharanmrepo:currencyservice
+        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:currencyservice
         ports:
         - name: grpc
           containerPort: 7000
@@ -399,7 +399,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: muralidharanm/murallidharanmrepo:shippingservice
+        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:shippingservice
         ports:
         - containerPort: 50051
         env:
@@ -478,7 +478,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: muralidharanm/murallidharanmrepo:adservice
+        image: 673536620341.dkr.ecr.us-east-1.amazonaws.com/container-migration:adservice
         ports:
         - containerPort: 9555
         env:
