@@ -142,7 +142,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: muralidharanm/murallidharanmrepo:latfrontend
+        image: muralidharanm/murallidharanmrepo:frontend1
         ports:
         - containerPort: 8080
         env:
